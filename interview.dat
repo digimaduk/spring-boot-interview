@@ -1,0 +1,42 @@
+-- 1/ add address table with below attributes
+-- address_id
+-- street_address
+-- city
+-- state
+-- postal_code
+-- country
+-- customer_id (fk)
+
+-- 2/ customer json
+{
+    "customer_id":2,
+    "first_name":"abc",
+    "last_name":"xyz",
+    "email":"abc.xyz@test.com",
+    "phone_number":"+91 9990009090",
+    "active_flag":"Y",
+    "created_by":"SYSTEM",
+    "created_date":"2024-02-29 00:00:00",
+    "updated_by":"SYSTEM",
+    "updated_date":"2024-02-29 00:00:00",
+    "addressList": [
+    {
+        "address_id": 1,
+        "street_address":"abc xyz eldeco county",
+        "city":"london",
+        "state":"England",
+        "country":"UK",
+        "address_type":"shipping"
+    },
+    {
+            "address_id": 2,
+            "street_address":"abc xyz eldeco county",
+            "city":"london",
+            "state":"England",
+            "country":"UK",
+            "address_type":"billing"
+     }
+     ]
+}
+
+-- 3/ sql to write
